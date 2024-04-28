@@ -19,11 +19,15 @@
   </build>
   <dependencies>
     <!-- Selenium WebDriver -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version> <!-- Use the appropriate version of Selenium -->
-    </dependency>
+   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+
+
 
     <!-- TestNG -->
     <dependency>
@@ -63,11 +67,13 @@
     </dependency>
 
     <!-- WebDriverManager -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.6.3</version> <!-- Use the appropriate version -->
-    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.6.3</version> <!-- Use the appropriate version -->
+        </dependency>
+
     <dependency>
     	<groupId>Selenium</groupId>
     	<artifactId>SampleProject1</artifactId>

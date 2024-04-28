@@ -9,7 +9,7 @@ import genericLib.BaseClass1;
 import pomPage.Login_Page;
 import pomPage.My_Network;
 import pomPage.homePage;
-@Test
+@Test(invocationCount =2)
 
 public class TestCase01 extends BaseClass1 {
 	 public void TestCase01() throws IOException, InterruptedException {
@@ -35,12 +35,12 @@ public class TestCase01 extends BaseClass1 {
 	        n.messageDD();
 	        Thread.sleep(20000);
 
-	       n.SeeAllBtn();
+	       //n.SeeAllBtn();
 
 
 	        Thread.sleep(20000);
 	     //  n.clickAllConnectButtonsAndRefresh();
-	        
+	        /*
 	        // Switching control to the pop-up window
 	        String mainWindowHandle = driver.getWindowHandle();
 	        Set<String> allWindowHandles = driver.getWindowHandles();
@@ -55,10 +55,11 @@ public class TestCase01 extends BaseClass1 {
 
 	        // Clicking all the connect buttons
 	        n.clickAllConnectButtonsAndRefresh2();
-	        Thread.sleep(20000);
+	        */
+	        //Thread.sleep(20000);
 	        // After interacting with elements in the pop-up window, you may want to switch back to the main window
-	        driver.switchTo().window(mainWindowHandle);
-
+	       // driver.switchTo().window(mainWindowHandle);
+            n.clickAllConnectButtonsAndRefresh2();
 	    }
 	 
 	 }

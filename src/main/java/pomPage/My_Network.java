@@ -147,10 +147,11 @@ public class My_Network {
             }
 
             // Check if 30 buttons have been clicked
-            if (count >= 30) {
+            if (count >= 100) {
                 break; // Exit the loop if 30 buttons have been clicked
             }
         }
+        System.out.println("Number of connection requests sent: " + count);
     }
 
 
