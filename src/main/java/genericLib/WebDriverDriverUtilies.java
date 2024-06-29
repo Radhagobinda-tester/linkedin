@@ -93,7 +93,7 @@ public class WebDriverDriverUtilies {
     public void scrollBar(WebDriver driver,int x, int y) {
 
     JavascriptExecutor js = (JavascriptExecutor)driver;
-    js.executeScript("window.ScrollBy("+x+","+y+")");
+    js.executeScript("window.scrollBy("+x+","+y+")");
 
 
     }
