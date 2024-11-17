@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class homePage {
 	@FindBy(xpath="//span[contains(@title,'My Network')]")
 	private WebElement Mynetwork;
-
+	@FindBy(xpath="//span[contains(@title,'Jobs')]")
+	private WebElement jobs;
 	// initialization
 
 	public homePage(WebDriver driver) {
@@ -21,5 +22,8 @@ public class homePage {
 		}
 
 		//span[normalize-space(text())='MyNetwork']
+		public void job() {
+			jobs.click();
+		}
 
 }
