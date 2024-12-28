@@ -30,8 +30,9 @@ public class My_Network {
 	///html[1]/body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]
 	@FindBy(xpath="//button[@aria-label='Show all suggestions for People you may know from Tech Mahindra']//span[@class='yyosflm cnuthteo cnutht0 h8e4ml0 _1xoe5hd0 cnuthtbs cnuthti8 cnutht17k _1s9oaxg7 _1s9oaxgi _1pylls4i _1pylls4m _139m7k7f _139m7k7m _139m7k7k _139m7k19r _139m7k1a1 _139m7k19w yyosfl11 h8e4mlbg _1k2lxme120 _1k2lxme15s _1k2lxmets _1k2lxmexk _1ptbkx6w8 yyosfl1c']")
 	private WebElement showall;
-	
-	@FindBy(xpath="/html[1]/body[1]/div[5]/div[4]/aside[1]/div[1]/header[1]/div[3]/button[2]/*[name()='svg'][1]")
+	///html[1]/body[1]/div[6]/div[4]/aside[1]/div[1]/header[1]/div[3]/button[1]/*[name()='svg'][1]/*[name()='use'][1]
+	///html[1]/body[1]/div[6]/div[4]/aside[1]/div[1]/header[1]/div[3]/button[1]/*[name()='svg'][1]
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[4]/aside[1]/div[1]/header[1]/div[3]/button[1]/*[name()='svg'][1]")
 	private WebElement dd;
 
 

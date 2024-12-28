@@ -35,12 +35,26 @@ public class ApplyJobsTestCase extends BaseClass1 {
         H5.job();
         Thread.sleep(5000);
         Jobs j2 = new Jobs(driver);
-        
+        Thread.sleep(5000);
         // Tapping on automation link
         
         j2.autoMationJobs();
         
         Thread.sleep(5000);
+        // Entering the place name 
+        j2.autoMationsearchfield(pdata.getPropertyfiledata("searchjobtitle"));
+        Thread.sleep(5000);
+        // Entering the location name 
+        j2.locationsearchfieldclear();
+        Thread.sleep(5000);
+        j2.locationsearchfield(pdata.getPropertyfiledata("Jobsearcharea"));
+        Thread.sleep(5000);
+        j2.locationsearchfieldclick();
+        Thread.sleep(5000);
+        j2.searchButton();
+        Thread.sleep(20000);
+        driver.close();
+        /*
         
 AutomationJobPage a = new AutomationJobPage(driver);
 
@@ -124,7 +138,8 @@ AutomationJobPage a = new AutomationJobPage(driver);
         a.popUpCloseButton();
         Thread.sleep(20000);
         */
-        
+        // now given
+        /*
         for (int i = 0; i < 5; i++) {
             try {
             	a.ClickonfirstLink();
@@ -197,6 +212,6 @@ AutomationJobPage a = new AutomationJobPage(driver);
                 System.out.println("An error occurred in loop iteration " + (i+1) + ": " + e.getMessage());
             }
         }
-
+*/
 	 }
 }

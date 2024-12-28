@@ -9,16 +9,17 @@ import genericLib.BaseClass1;
 import pomPage.Login_Page;
 import pomPage.My_Network;
 import pomPage.homePage;
-@Test(invocationCount =4)
+@Test(invocationCount =3
+)
 
 public class TestCase01 extends BaseClass1 {
 	 public void TestCase01() throws IOException, InterruptedException {
 		 Login_Page p1 = new Login_Page(driver);
-		 Thread.sleep(5000);
+		 Thread.sleep(10000);
 	        p1.Emailtextf(pdata.getPropertyfiledata("Email1"));
-	        Thread.sleep(5000);
+	        Thread.sleep(10000);
 	        p1.passwordtextf(pdata.getPropertyfiledata("Password1"));
-	        Thread.sleep(5000);
+	        Thread.sleep(10000);
 	        p1.loginButtn();
 	        Thread.sleep(5000);
 	        homePage H = new homePage(driver);
@@ -31,9 +32,9 @@ public class TestCase01 extends BaseClass1 {
 	       // driver.navigate().refresh();
 	       //Thread.sleep(20000);
 	        My_Network n = new My_Network(driver);
-	       //Thread.sleep(20000);
-	       // n.messageDD();
-	        Thread.sleep(5000);
+	       Thread.sleep(10000);
+	      //  n.messageDD();
+	       // Thread.sleep(5000);
 	       // n.scrollToSeeAllAndClick();
 	       //n.SeeAllBtn();
 
